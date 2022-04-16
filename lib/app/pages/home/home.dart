@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:my_little_business/app/pages/expenses_page/expenses_page.dart';
+import 'package:my_little_business/app/pages/products_page/products_page.dart';
+import 'package:my_little_business/app/pages/sales_page/sales_page.dart';
 
 import '../../widgets/my_bottom_navigation.dart';
+import '../home_page/home_page.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -18,21 +22,16 @@ class _HomeState extends State<Home> {
     });
   }
 
-  final List<Widget> _children = [
-    const Text('Home'),
-    const Text('Vendas'),
-    const Text('Produtos'),
-    const Text('Despesas'),
+  final List<Widget> _screens = [
+    const HomePage(),
+    const SalesPage(),
+    const ProductsPage(),
+    const ExpensesPage(),
   ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: _children[_selectedIndex],
-      ),
-      body: Center(
-        child: _children[_selectedIndex],
-      ),
+      body: _screens[_selectedIndex],
       bottomNavigationBar: MyBottomNavigation(
         onItemTapped: _onItemTapped,
         selectedIndex: _selectedIndex,
