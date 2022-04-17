@@ -8,6 +8,12 @@ class SalesPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Vendas'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.add),
+            onPressed: () {},
+          ),
+        ],
       ),
       body: const Center(
         child: Text('Vendas'),

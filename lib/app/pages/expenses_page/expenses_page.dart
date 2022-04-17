@@ -8,6 +8,12 @@ class ExpensesPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Despesas'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.add),
+            onPressed: () {},
+          ),
+        ],
       ),
       body: const Center(
         child: Text('Despesas'),
