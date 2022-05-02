@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_little_business/app/pages/products_page/product.dart';
 
 class ProductsPage extends StatelessWidget {
   const ProductsPage({Key? key}) : super(key: key);
@@ -17,132 +18,21 @@ class ProductsPage extends StatelessWidget {
         ),
         body: ListView(
           padding: const EdgeInsets.only(top: 16),
-          children: [
-            Container(
-              padding: const EdgeInsets.all(16),
-              decoration: const BoxDecoration(
-                  border: Border(
-                      bottom: BorderSide(color: Colors.black12, width: 1))),
-              child: Padding(
-                padding: const EdgeInsets.only(right: 24, left: 24),
-                child: Column(
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const [
-                        Text('Produto 01'),
-                        Text('R\$ 100,00'),
-                        Text('QTD: 100'),
-                      ],
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        Container(
-                          padding: const EdgeInsets.only(
-                              right: 8, left: 8, top: 4, bottom: 4),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(4),
-                            color: Colors.green,
-                          ),
-                          child: Text(
-                            'Tag'.toUpperCase(),
-                            style: const TextStyle(
-                              fontSize: 12,
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
+          children: const [
+            Product(
+              name: 'Produto 1',
+              value: 10.0,
+              qtd: 1,
             ),
-            Container(
-              padding: const EdgeInsets.all(16),
-              decoration: const BoxDecoration(
-                  border: Border(
-                      bottom: BorderSide(color: Colors.black12, width: 1))),
-              child: Padding(
-                padding: const EdgeInsets.only(right: 24, left: 24),
-                child: Column(
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const [
-                        Text('Produto 01'),
-                        Text('R\$ 100,00'),
-                        Text('QTD: 100'),
-                      ],
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        Container(
-                          padding: const EdgeInsets.only(
-                              right: 8, left: 8, top: 4, bottom: 4),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(4),
-                            color: Colors.green,
-                          ),
-                          child: Text(
-                            'Tag'.toUpperCase(),
-                            style: const TextStyle(
-                              fontSize: 12,
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
+            Product(
+              name: 'Produto 2',
+              value: 20.0,
+              qtd: 2,
             ),
-            Container(
-              padding: const EdgeInsets.all(16),
-              decoration: const BoxDecoration(
-                  border: Border(
-                      bottom: BorderSide(color: Colors.black12, width: 1))),
-              child: Padding(
-                padding: const EdgeInsets.only(right: 24, left: 24),
-                child: Column(
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const [
-                        Text('Produto 01'),
-                        Text('R\$ 100,00'),
-                        Text('QTD: 100'),
-                      ],
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        Container(
-                          padding: const EdgeInsets.only(
-                              right: 8, left: 8, top: 4, bottom: 4),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(4),
-                            color: Colors.green,
-                          ),
-                          child: Text(
-                            'Tag'.toUpperCase(),
-                            style: const TextStyle(
-                              fontSize: 12,
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
+            Product(
+              name: 'Produto 3',
+              value: 30.0,
+              qtd: 3,
             ),
           ],
         ));
