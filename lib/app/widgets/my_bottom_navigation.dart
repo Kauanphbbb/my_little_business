@@ -11,7 +11,7 @@ class MyBottomNavigation extends StatelessWidget {
   Widget build(BuildContext context) {
     return BottomNavigationBar(
       type: BottomNavigationBarType.fixed,
-      selectedItemColor: const Color(0xFF090CB6),
+      selectedItemColor: const Color(0xFF241675),
       currentIndex: selectedIndex,
       onTap: onItemTapped,
       items: const <BottomNavigationBarItem>[
