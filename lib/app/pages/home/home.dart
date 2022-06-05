@@ -3,7 +3,7 @@ import 'package:my_little_business/app/pages/expenses_page/expenses_page.dart';
 import 'package:my_little_business/app/pages/products_page/products_page.dart';
 import 'package:my_little_business/app/pages/sales_page/sales_page.dart';
 
-import '../../widgets/my_bottom_navigation.dart';
+import 'widgets/my_bottom_navigation.dart';
 import '../home_page/home_page.dart';
 
 class Home extends StatefulWidget {
