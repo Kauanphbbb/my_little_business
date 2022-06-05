@@ -43,44 +43,24 @@ class _SaleState extends State<Sale> {
           border: Border(bottom: BorderSide(color: Colors.black12, width: 1))),
       child: Padding(
         padding: const EdgeInsets.only(right: 24, left: 24),
-        child: Column(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(widget.name),
-                Text('${widget.date.day}/${widget.date.month}/${widget.date.year}'),
-                Text('QTD: ${widget.qtd}'),
-                Switch(
-                  value: isConfirmed,
-                  onChanged: onChanged,
-                  activeColor: Colors.green,
-                  activeTrackColor: Colors.greenAccent,
-                  inactiveTrackColor: Colors.redAccent,
-                )
-              ],
+            Text(widget.name),
+            Text('${widget.date.day}/${widget.date.month}/${widget.date.year}'),
+            Text('QTD: ${widget.qtd}'),
+            Text(
+              'R\$ ${widget.value}',
+              style: const TextStyle(
+                  color: Colors.green, fontWeight: FontWeight.bold),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Container(
-                  padding: const EdgeInsets.only(
-                      right: 8, left: 8, top: 4, bottom: 4),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(4),
-                    color: Colors.green,
-                  ),
-                  child: Text(
-                    'R\$ ${widget.value}',
-                    style: const TextStyle(
-                      fontSize: 12,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-              ],
-            ),
+            Switch(
+              value: isConfirmed,
+              onChanged: onChanged,
+              activeColor: Colors.green,
+              activeTrackColor: Colors.greenAccent,
+              inactiveTrackColor: Colors.redAccent,
+            )
           ],
         ),
       ),
