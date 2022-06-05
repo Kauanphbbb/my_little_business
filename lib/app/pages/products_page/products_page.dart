@@ -7,34 +7,35 @@ class ProductsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text('Produtos'),
-          actions: [
-            IconButton(
-              icon: const Icon(Icons.add),
-              onPressed: () {},
-            ),
-          ],
-        ),
-        body: ListView(
-          padding: const EdgeInsets.only(top: 16),
-          children: const [
-            Product(
-              name: 'Produto 1',
-              value: 10.0,
-              qtd: 1,
-            ),
-            Product(
-              name: 'Produto 2',
-              value: 20.0,
-              qtd: 2,
-            ),
-            Product(
-              name: 'Produto 3',
-              value: 30.0,
-              qtd: 3,
-            ),
-          ],
-        ));
+      appBar: AppBar(
+        title: const Text('Produtos'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.add),
+            onPressed: () {},
+          ),
+        ],
+      ),
+      body: ListView(
+        padding: const EdgeInsets.only(top: 16),
+        children: const [
+          Product(
+            name: 'Produto 1',
+            value: 10.0,
+            qtd: 1,
+          ),
+          Product(
+            name: 'Produto 2',
+            value: 20.0,
+            qtd: 2,
+          ),
+          Product(
+            name: 'Produto 3',
+            value: 30.0,
+            qtd: 3,
+          ),
+        ],
+      ),
+    );
   }
 }

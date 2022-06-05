@@ -38,7 +38,7 @@ class _SaleState extends State<Sale> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.all(4),
       decoration: const BoxDecoration(
           border: Border(bottom: BorderSide(color: Colors.black12, width: 1))),
       child: Padding(

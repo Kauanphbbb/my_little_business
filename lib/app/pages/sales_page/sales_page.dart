@@ -8,7 +8,7 @@ class SalesPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Produtos'),
+          title: const Text('Vendas'),
           actions: [
             IconButton(
               icon: const Icon(Icons.add),

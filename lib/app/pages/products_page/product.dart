@@ -12,7 +12,7 @@ class Product extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.all(12),
       decoration: const BoxDecoration(
           border: Border(bottom: BorderSide(color: Colors.black12, width: 1))),
       child: Padding(
